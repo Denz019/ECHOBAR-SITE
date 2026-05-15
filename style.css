@@ -1,15 +1,15 @@
 :root {
-  --color_logoecho: ;
-  --color_course_orange: ;
-  --color_course_purple: ;
+  --color_logoecho: #f2dea2;
+  --color_course_orange: #aa2d01;
+  --color_course_purple: #5e0271;
 
   /* Logotype */
   --color-logotype-bg: ;
-  --color-text-logotype:;
+  --color-text-logotype: ;
   --font-logotype-size: 1rem;
 
   /* Links */
-  --color-link-bg: ;
+  --color-link: #f2dea2;
   --color-link-hover: ;
   --color-link-active: ;
   --border-radius-links: 1px;
@@ -24,7 +24,7 @@
   --font-sub1-size: 1rem;
 
   /* Tekst */
-  --color-text: ;
+  --color-text: #f2dea2;
   --text-size: ;
 
   /* Andet tekst */
@@ -44,8 +44,11 @@
   --font-weight-light: 200;
 
   /* Forms background colors*/
-  --form-background-color: #a62655;
-  --color-field-bg: #fa9a2c;
+  --form-background-color: ;
+  --color-field-bg: ;
+
+  /* Footer background color*/
+  --footer-background-color: black;
 
   /* Global menu 
   --color-menu-bg: ;
