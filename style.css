@@ -1,28 +1,17 @@
 :root {
-  --color_darkred: #a62655;
-  --color_lightred: #f4689b;
-  --color_darkblue: #296b73;
-  --color_lightblue: #77c7d9;
-  --color_orange: #fa9a2c;
-  --color_darkorange: #bc731f;
-  --color_yellow: #f5e074;
-  /* Background color */
-  --color-bg: beige;
-
-  /* Header background color */
-  --color-head-bg: #a62655;
+  --color_logoecho: ;
+  --color_course_orange: ;
+  --color_course_purple: ;
 
   /* Logotype */
-  --color-logotype-bg: #a62655;
-  --color-text-logotype: #c1bfb8;
+  --color-logotype-bg: ;
+  --color-text-logotype:;
   --font-logotype-size: 1rem;
 
-  /* Global menu */
-  --color-menu-bg: #a62655;
   /* Links */
-  --color-link-bg: #fa9a2c;
-  --color-link-hover: #fff;
-  --color-link-active: #77c7d9;
+  --color-link-bg: ;
+  --color-link-hover: ;
+  --color-link-active: ;
   --border-radius-links: 1px;
 
   /* Headlines (size)*/
@@ -34,12 +23,8 @@
   --headline3-size: 1rem;
   --font-sub1-size: 1rem;
 
-  /* Headlines (color) */
-  --color-headline-bg: #fa9a2c;
-
   /* Tekst */
   --color-text: rgb(54, 54, 54);
-  --color-text-inverted: white;
 
   /* Andet tekst */
   --followup-text-size: 1rem;
@@ -50,12 +35,6 @@
   /* Borders */
   --border-radius: 5px;
 
-  /* Cards */
-  --color-card-bg: #fa9a2c;
-  --color-card-bg-inverted: beige;
-  --color-cta-card-bg: #fa9a2c;
-  --color-cta-card-bg-inverted: #a62655;
-
   /* Fonts & font weights*/
   --font-family-sans: ui-sans-serif;
   --font-weight-bold: 700;
@@ -63,11 +42,35 @@
   --font-weight-regular: 300;
   --font-weight-light: 200;
 
-  /* Infographics background colors*/
-  --color-info-bg: white;
-  --color-symptom-bg: #f2d9d1;
-
   /* Forms background colors*/
   --form-background-color: #a62655;
   --color-field-bg: #fa9a2c;
+
+  /* Global menu 
+  --color-menu-bg: ;
+  */
+
+  /* Headlines (color) 
+  --color-headline-bg: ;
+  */
+
+  /*
+  --color-text-inverted: white;*/
+
+  /* Cards 
+  --color-card-bg: #fa9a2c;
+  --color-card-bg-inverted: beige;
+  --color-cta-card-bg: #fa9a2c;
+  --color-cta-card-bg-inverted: #a62655;
+  */
+
+  /* Infographics background colors
+  --color-info-bg: white;
+  --color-symptom-bg: #f2d9d1;
+  */
+  /* Background color
+  --color-bg: ; */
+
+  /* Header background color
+  --color-head-bg: ; */
 }
