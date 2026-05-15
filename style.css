@@ -10,8 +10,8 @@
 
   /* Links */
   --color-link: #f2dea2;
-  --color-link-hover: ;
-  --color-link-active: ;
+  --color-link-hover: white;
+  --color-link-active: white;
   --border-radius-links: 1px;
 
   /* Headlines (size)*/
