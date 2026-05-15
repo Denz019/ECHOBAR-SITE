@@ -24,7 +24,8 @@
   --font-sub1-size: 1rem;
 
   /* Tekst */
-  --color-text: rgb(54, 54, 54);
+  --color-text: ;
+  --text-size: ;
 
   /* Andet tekst */
   --followup-text-size: 1rem;
