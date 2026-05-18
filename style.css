@@ -43,9 +43,11 @@
   --font-weight-regular: 300;
   --font-weight-light: 200;
 
-  /* Forms background colors*/
-  --form-background-color: ;
-  --color-field-bg: ;
+  /* Forms background colors */
+  --form-background-color: #354036;
+  --form-ligther-color: #3f4b3e;
+  --form-shadow-color: #354036;
+  /* --color-field-bg: ; */
 
   /* Footer background color*/
   --footer-background-color: black;
