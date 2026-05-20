@@ -7,7 +7,7 @@ main {
   background-attachment: fixed;
 }
 
-/* hero text */
+/* hero text 
 .hero_text {
   padding: 10rem 3rem;
   margin: 2rem auto;
@@ -23,7 +23,8 @@ main {
 
 .hero_text p {
   padding: 0.8rem 1.5rem;
-}
+} 
+*/
 
 /* sections */
 .grid_1-1 {
@@ -164,8 +165,165 @@ main {
   margin-top: 2rem;
 }
 
+/* =========================
+   HEADER
+========================= */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+}
+
+/* NAVBAR */
+.navbar {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 60px;
+}
+
+/* NAVIGATION */
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+}
+
+/* LINKS */
+.navbar a {
+  color: #f4e1b6;
+  font-family: "Train One", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+}
+
+/* LOGO */
+.logo {
+  font-family: "Train One", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  color: #f4e1b6;
+  line-height: 1;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  position: relative;
+  height: 100vh;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), url(imgs-echo-kopi/welcome\ forside.webp);
+
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: calc(100vh - 100px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  font-family: "TRAIN ONE", sans-serif;
+
+  font-size: 8rem;
+  font-weight: normal;
+
+  color: #f4e1b6;
+
+  text-transform: uppercase;
+
+  letter-spacing: 8px;
+  line-height: 1;
+
+  text-align: center;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  padding-top: 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer h4 {
+  font-family: "Oswald", sans-serif;
+  color: #f4e1b6;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.footer p {
+  color: #aaa;
+  line-height: 1.8;
+  font-size: 0.9rem;
+}
+
+.footer-bottom {
+  margin-top: 80px;
+  padding: 25px 40px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-left,
+  .nav-right {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+}
+
 /* mobile */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .grid_1-1 {
     grid-template-columns: 1fr !important;
   }
@@ -186,5 +344,33 @@ main {
   .text_2 p,
   .text_3 p {
     font-size: 1rem;
+  }
+  .navbar {
+    padding: 20px;
+  }
+
+  .navbar a {
+    font-size: 0.65rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+
+  .hero-content h1 {
+    font-size: 14vw;
+    letter-spacing: 4px;
+  }
+  /*
+  .feature-image img,
+  .about-img img {
+    height: 240px;
+  }*/
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
   }
 }
