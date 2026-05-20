@@ -6,12 +6,12 @@
   padding: 0;
 }
 
-html {
+/* html {
   interpolate-size: allow-keywords;
   font-family: system-ui, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-}
+} */
 
 h1,
 h2 {
@@ -58,14 +58,42 @@ select,
   appearance: base-select;
 }
 /* ---------------------------------------------------------------------*/
+.reservation {
+  /* margin: 0; */
+  background-image: url("imgs-echo/reservation.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+
+.reservation-text {
+  padding: 6rem 2rem;
+  margin: auto;
+  margin-bottom: 4rem;
+  text-align: center;
+  max-width: 900px;
+  width: 90%;
+}
+
+.reservation-text h1 {
+  margin-bottom: 1.5rem;
+  font-family: var(--font-family-h1);
+}
+
+.reservation-texth2 {
+  padding: 0.8rem 1.5rem;
+}
+
+/* ------------------------------------------------------------------------ */
 
 .resi_site {
   background-color: var(--footer-background-color);
 }
 
-.reservationt {
+/* .reservationt {
   position: relative;
-  /* text-align: center; */
+ 
 }
 
 .reservation-text {
@@ -79,11 +107,13 @@ select,
 
 .h1 {
   margin-bottom: 15px;
+  font-family: var(--font-family-h1);
 }
+  */
 
 .text_map {
   text-align: center;
-
+  font-family: var(--font-family-h1);
   margin-bottom: 10px;
   margin-top: 40px;
 }
@@ -112,26 +142,20 @@ label {
 
 button {
   color: var(--color-text);
+  margin: auto;
 }
 
 .submit {
   border: 1.5px solid var(--color-text);
-
   display: block;
   text-align: center;
   border-radius: 10px;
   box-shadow: 10px 10px 10px var(--color-boarder);
   background-color: var(--form-ligther-color);
   box-shadow: 20px 20px 30px var(--form-ligther-color);
-  display: inline-block;
   padding: 3px;
   padding-inline: 7px;
   width: auto;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 input {
@@ -169,11 +193,7 @@ legend {
   input {
     width: 300px;
   }
-  /* iframe{
-    width: 90%;
-    display: grid;
-    place-items: center;
-  } */
+
   .MAP_map {
     width: 90%;
     margin: auto;
