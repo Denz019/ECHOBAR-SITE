@@ -1,0 +1,192 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  interpolate-size: allow-keywords;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: max(1em, 16px);
+}
+
+textarea {
+  resize: none;
+  min-height: 4lh;
+}
+
+legend {
+  padding: 0;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+/* ---------------------------------------------------------------------*/
+
+.resi_site {
+  background-color: var(--footer-background-color);
+}
+
+.reservationt {
+  position: relative;
+  /* text-align: center; */
+}
+
+.reservation-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+.h1 {
+  margin-bottom: 15px;
+}
+
+.text_map {
+  text-align: center;
+
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+/* ------------------ form--------------------------------------- */
+
+.input-info {
+  background-color: var(--form-background-color);
+
+  width: 90%;
+  height: auto;
+  margin: auto;
+  padding: 20px;
+}
+
+.input-info:has(:required) {
+  label::after {
+    content: " *";
+    color: red;
+  }
+}
+
+label {
+  color: var(--color-text);
+}
+
+button {
+  color: var(--color-text);
+}
+
+.submit {
+  border: 1.5px solid var(--color-text);
+
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px var(--color-boarder);
+  background-color: var(--form-ligther-color);
+  box-shadow: 20px 20px 30px var(--form-ligther-color);
+  display: inline-block;
+  padding: 3px;
+  padding-inline: 7px;
+  width: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+input {
+  margin-bottom: 20px;
+  background-color: var(--form-ligther-color);
+}
+
+legend {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fullName {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.eMail {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.PhoneN {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* --------------------------------------------------------------------- */
+@media (min-width: 800px) {
+  .input-info {
+    width: 550px;
+  }
+  input {
+    width: 300px;
+  }
+  /* iframe{
+    width: 90%;
+    display: grid;
+    place-items: center;
+  } */
+  .MAP_map {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+  }
+
+  button {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+  }
+}
