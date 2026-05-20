@@ -7,8 +7,7 @@ main {
   background-attachment: fixed;
 }
 
-/* hero text 
-.hero_text {
+.hero text .hero_text {
   padding: 10rem 3rem;
   margin: 2rem auto;
   text-align: center;
@@ -23,8 +22,7 @@ main {
 
 .hero_text p {
   padding: 0.8rem 1.5rem;
-} 
-*/
+}
 
 /* sections */
 .grid_1-1 {
@@ -222,7 +220,7 @@ main {
 
 /* =========================
    HERO
-========================= */
+========================= 
 .hero {
   position: relative;
   height: 100vh;
@@ -263,7 +261,7 @@ main {
   line-height: 1;
 
   text-align: center;
-}
+}*/
 
 /* =========================
    FOOTER
