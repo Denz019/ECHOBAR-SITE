@@ -7,9 +7,9 @@ main {
   background-attachment: fixed;
 }
 
-.hero text .hero_text {
-  padding: 10rem 3rem;
-  margin: 2rem auto;
+.hero_text {
+  padding: 12rem 3rem 6rem;
+  margin: 0 auto;
   text-align: center;
   max-width: 900px;
   width: 90%;
