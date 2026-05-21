@@ -1,3 +1,28 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background: #000;
+  color: #f4e1b6;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
 main {
   margin: 0;
   background-image: url("imgs-echo/IMG_4924.webp");
@@ -7,6 +32,9 @@ main {
   background-attachment: fixed;
 }
 
+/* =========================
+   HERO
+========================= */
 .hero_text {
   padding: 12rem 3rem 6rem;
   margin: 0 auto;
@@ -18,11 +46,30 @@ main {
 .hero_text h1 {
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
+
+  font-size: 8rem;
+  font-weight: normal;
+
+  color: #f4e1b6;
+
+  letter-spacing: 8px;
+  line-height: 1;
 }
 
 .hero_text p {
   padding: 0.8rem 1.5rem;
+  font-size: 2rem;
+  font-weight: normal;
+
+  color: #f4e1b6;
+
+  letter-spacing: 2px;
+  line-height: 1;
 }
+
+/* =========================
+   SECTIONS
+========================= */
 
 /* sections */
 .grid_1-1 {
@@ -51,24 +98,27 @@ main {
 }
 
 /* text */
+/* text */
 .text_1,
 .text_2,
 .text_3 {
   align-self: start;
   min-width: 0;
+
+  margin: 0.5rem 0;
 }
+
+/* section specific spacing */
 .text_1 {
-  padding-right: 3rem;
-  padding-left: 2rem;
+  padding: 0 3rem 2rem 2rem;
 }
+
 .text_2 {
-  padding-right: 2rem;
-  padding-left: 3rem;
+  padding: 0 2rem 2rem 3rem;
 }
 
 .text_3 {
-  padding-right: 3rem;
-  padding-left: 2rem;
+  padding: 0 3rem 2rem 2rem;
 }
 
 .text_1 h2,
@@ -78,6 +128,21 @@ main {
 .text_2 p,
 .text_3 p {
   margin-block-start: 0;
+}
+
+.text_1 h2 {
+  margin-bottom: 2rem;
+}
+
+.text_2 h2,
+.text_3 h2 {
+  margin-bottom: 1.5rem;
+}
+
+.text_1 p,
+.text_2 p,
+.text_3 p {
+  margin-top: 1rem;
 }
 
 /* section 1 larger */
@@ -103,8 +168,10 @@ main {
   font-size: clamp(0.95rem, 1.2vw, 1.3rem);
   line-height: 1.5;
 }
+/* =========================
+   MEDIA
+========================= */
 
-/* media */
 .video_part video,
 .pic_1 img,
 .pic_2 img {
@@ -114,7 +181,9 @@ main {
   display: block;
   border-radius: var(--border-radius);
 }
-
+/* =========================
+   IMAGE LINK
+========================= */
 .image_link a {
   position: relative;
   display: block;
