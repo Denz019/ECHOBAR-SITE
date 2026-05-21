@@ -24,61 +24,6 @@ a {
 }
 
 /* =========================
-   HEADER
-========================= */
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: transparent;
-}
-
-/* NAVBAR */
-.navbar {
-  position: relative;
-  z-index: 2;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 30px 60px;
-}
-
-/* NAVIGATION */
-.nav-left,
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-  list-style: none;
-}
-
-/* LINKS */
-.navbar a {
-  color: #f4e1b6;
-  font-family: "Train One", sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  transition: 0.3s ease;
-}
-
-.navbar a:hover {
-  opacity: 0.7;
-}
-
-/* LOGO */
-.logo {
-  font-family: "Train One", sans-serif;
-  font-size: 4rem;
-  letter-spacing: 5px;
-  color: #f4e1b6;
-  line-height: 1;
-}
-
-/* =========================
    HERO
 ========================= */
 .hero {
@@ -222,76 +167,10 @@ a {
 }
 
 /* =========================
-   FOOTER
-========================= */
-.footer {
-  padding-top: 80px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer h4 {
-  font-family: "Oswald", sans-serif;
-  color: #f4e1b6;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-}
-
-.footer p {
-  color: #aaa;
-  line-height: 1.8;
-  font-size: 0.9rem;
-}
-
-.footer-bottom {
-  margin-top: 80px;
-  padding: 25px 40px;
-
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-bottom p {
-  font-size: 0.8rem;
-}
-
-/* =========================
    RESPONSIVE
 ========================= */
-@media (max-width: 1000px) {
-  .navbar {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .nav-left,
-  .nav-right {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .logo {
-    font-size: 3rem;
-  }
-}
 
 @media (max-width: 600px) {
-  .navbar {
-    padding: 20px;
-  }
-
-  .navbar a {
-    font-size: 0.65rem;
-  }
-
-  .logo {
-    font-size: 2rem;
-    letter-spacing: 3px;
-  }
-
   .hero-content h1 {
     font-size: 14vw;
     letter-spacing: 4px;
