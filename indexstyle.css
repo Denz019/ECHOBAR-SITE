@@ -23,6 +23,14 @@ a {
   text-decoration: none;
 }
 
+/* svg line */
+.streger {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 2rem;
+}
 /* =========================
    HERO
 ========================= */
